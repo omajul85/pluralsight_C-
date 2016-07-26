@@ -7,7 +7,7 @@ using namespace std;
 Person::Person(string first, string last, int n) :
     firstname(first), lastname(last), id(n)
 {
-    cout << "Constructing " << firstname << " " << lastname << endl;
+    cout << "Constructing " << getName() << endl;
 }
 
 string Person::getName(){
@@ -17,5 +17,5 @@ string Person::getName(){
 // Destructor
 Person::~Person()
 {
-    cout << "Destructing " << firstname << " " << lastname << endl;
+    cout << "Destructing " << getName() << endl;
 }
