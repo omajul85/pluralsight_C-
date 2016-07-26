@@ -11,7 +11,7 @@ int main()
     {
         Tweeter t1("omar", "alvarez", 1, "@omajul");
     }
-    std::cout << "After innermost block" << std::endl;
+    cout << "After innermost block" << endl;
 
     return 0;
 }

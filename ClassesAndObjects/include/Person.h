@@ -3,6 +3,8 @@
 
 #include <string>
 
+// Do not use using namespace std; in header files !
+
 class Person
 {
     public:

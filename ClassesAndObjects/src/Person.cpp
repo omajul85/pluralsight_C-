@@ -1,15 +1,17 @@
 #include "Person.h"
 #include <iostream>
 
+using namespace std;
+
 // Constructor with initializer syntax
-Person::Person(std::string first, std::string last, int n) :
+Person::Person(string first, string last, int n) :
     firstname(first), lastname(last), id(n)
 {
-    std::cout << "Constructing " << firstname << " " << lastname << std::endl;
+    cout << "Constructing " << firstname << " " << lastname << endl;
 }
 
 // Destructor
 Person::~Person()
 {
-    std::cout << "Destructing " << firstname << " " << lastname << std::endl;
+    cout << "Destructing " << firstname << " " << lastname << endl;
 }

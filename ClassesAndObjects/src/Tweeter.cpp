@@ -1,13 +1,15 @@
 #include "Tweeter.h"
 #include <iostream>
 
-Tweeter::Tweeter(std::string first, std::string last, int n, std::string handle) :
+using namespace std;
+
+Tweeter::Tweeter(string first, string last, int n, string handle) :
     Person(first, last, n), tweeterhandle(handle)
 {
-    std::cout << "Constructing " << tweeterhandle << std::endl;
+    cout << "Constructing " << tweeterhandle << endl;
 }
 
 Tweeter::~Tweeter()
 {
-    std::cout << "Destructing " << tweeterhandle << std::endl;
+    cout << "Destructing " << tweeterhandle << endl;
 }
