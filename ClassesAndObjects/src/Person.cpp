@@ -10,6 +10,10 @@ Person::Person(string first, string last, int n) :
     cout << "Constructing " << firstname << " " << lastname << endl;
 }
 
+string Person::getName(){
+    return firstname + " " + lastname;
+}
+
 // Destructor
 Person::~Person()
 {

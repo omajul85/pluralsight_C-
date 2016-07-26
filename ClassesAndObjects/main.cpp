@@ -18,6 +18,8 @@ int main()
     s = Approved;
 
     cout << "Status = " << s << endl;
+    p1.setId(69);
+    cout << p1.getName() << " " << p1.getId() << endl;
 
     return 0;
 }

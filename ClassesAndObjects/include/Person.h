@@ -13,6 +13,11 @@ class Person
     public:
         Person(std::string first, std::string last, int n);
         virtual ~Person();
+        std::string getName();
+
+        // Inline functions for setters and getters
+        int getId(){ return id; }
+        void setId(int n){ id = n; }
     protected:
     private:
         std::string firstname;
