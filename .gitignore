@@ -1,0 +1,9 @@
+*/bin
+*/obj
+*/*.cbp
+*/*.depend
+*/*.layout
+LeapYear
+Test
+HelloWorld
+Pluralsight Fundamentals
