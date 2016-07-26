@@ -1,9 +1,9 @@
 #include "Person.h"
 
-Person::Person()
-{
-    //ctor
-}
+// Constructor with initializer syntax
+Person::Person(std::string first, std::string last, int n) :
+    firstname(first), lastname(last), id(n) {}
+
 
 Person::~Person()
 {
