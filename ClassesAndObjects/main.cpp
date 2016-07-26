@@ -1,14 +1,17 @@
 #include <iostream>
-#include "Person.h"
+//#include "Person.h"
+#include "Tweeter.h"
+#include <iostream>
 
 using namespace std;
 
 int main()
 {
-    // Because of the scope, p1 will be destructed first
+    Person p1("laura", "snowise", 2);
     {
-        Person p1("omar", "alvarez", 1);
+        Tweeter t1("omar", "alvarez", 1, "@omajul");
     }
-    Person p2("laura", "snowise", 2);
+    std::cout << "After innermost block" << std::endl;
+
     return 0;
 }
