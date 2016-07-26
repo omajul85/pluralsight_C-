@@ -1,3 +1,6 @@
+/* We use include guards to avoid compilation errors when trying
+to include the same file several times */
+
 #ifndef PERSON_H
 #define PERSON_H
 

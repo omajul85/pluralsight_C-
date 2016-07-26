@@ -1,5 +1,5 @@
 #include <iostream>
-//#include "Person.h"
+#include "Person.h"
 #include "Tweeter.h"
 #include <iostream>
 #include "status.h"
