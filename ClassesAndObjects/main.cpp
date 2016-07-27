@@ -1,10 +1,16 @@
-#include <iostream>
 #include "Person.h"
 #include "Tweeter.h"
 #include <iostream>
+#include <string>
 #include "status.h"
 
 using namespace std;
+
+// Write the function with a placeholder
+template <class T>
+T max(T& a, T&b){
+    return a < b? b : a;
+}
 
 int main()
 {
@@ -38,6 +44,15 @@ int main()
 	if (!(300 < p3))
 		cout << "not ";
 	cout << "less than p3" << endl;
+
+	int a(33);
+	int b(44);
+	string s1 = "Omar";
+	string s2 = "Julian";
+
+	cout << "max of " << a << " and " << b << " is " << max(a,b) << endl;
+	cout << "max of " << s1 << " and " << s2 << " is " << max(s1,s2) << endl;
+	cout << "max of " << p3.getName() << " and " << p4.getName() << " is " << max(p3,p4).getName() << endl;
 
     return 0;
 }
