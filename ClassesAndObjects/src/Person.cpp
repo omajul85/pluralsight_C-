@@ -10,20 +10,20 @@ Person::Person(string first, string last, int n) :
     cout << "Constructing " << getName() << endl;
 }
 
-string Person::getName(){
+string Person::getName() const {
     return firstname + " " + lastname;
 }
 
 // We can use private attributes directly for comparison because the operators are member functions
-bool Person::operator<(Person& p){
+bool Person::operator<(const Person& p) const {
     return id < p.id;
 }
 
-bool Person::operator<(int i){
+bool Person::operator<(int i) const {
     return id < i;
 }
 
-bool operator<(int i, Person& p){
+bool operator<(int i, const Person& p) {
     // We use getId() because this operator is not a member function. Must use a public method.
     // return i < p.getId();
 

@@ -93,5 +93,25 @@ int main()
         cout << "Enter a number, 0 to quit" << endl;
         cin >> n;
     }
+
+    // Exercice
+
+    int number, limit;
+    cout << "Enter the size of the matrix: " << endl;
+    cin >> number;
+    limit = number - 1;
+    char matrix[number][number];
+    for (int i = 0; i < number; i++){
+        for (int j = 0; j < number; j++){
+            if (j >= limit - i){
+                matrix[i][j] = '*';
+            } else {
+                matrix[i][j] = '-';
+            }
+            cout << matrix[i][j];
+        }
+        cout << endl;
+    }
+
     return 0;
 }
