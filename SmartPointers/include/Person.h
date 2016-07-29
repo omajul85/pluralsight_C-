@@ -21,6 +21,7 @@ class Person
         void setId(int n){ id = n; }
         void setFirstName(std::string f){ firstname = f; }
         void addResource();
+        std::string getResourceName() const { return pResource->getName(); }
         bool operator<(int i) const;
         bool operator<(const Person& p) const;
         // Without friend keyword: error: 'int Person::id' is private

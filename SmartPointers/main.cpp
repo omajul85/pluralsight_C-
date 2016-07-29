@@ -22,6 +22,8 @@ int main()
 
     // CASE 3: Copy assignment. We need to overload the asignment operator (=)
     p = p2;
+    std::string s1 = p.getResourceName();
+    cout << s1 << endl;
 
     // With shared_ptr, multiple copies of the same person share the same resource. Only when the last
     // person gets out of scope the resource is deleted. So, no memory leak
