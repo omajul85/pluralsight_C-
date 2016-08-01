@@ -7,7 +7,6 @@ using namespace std;
 Person::Person(string first, string last, int n) :
     firstname(first), lastname(last), id(n)
 {
-    cout << "Constructing " << getName() << endl;
 }
 
 string Person::getName() const {
@@ -34,5 +33,4 @@ bool operator<(int i, const Person& p) {
 // Destructor
 Person::~Person()
 {
-    cout << "Destructing " << getName() << endl;
 }
