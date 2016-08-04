@@ -9,3 +9,9 @@ HelloWorld
 Pluralsight Fundamentals 1
 Pluralsight Fundamentals 2
 Pluralsight Fundamentals 3
+Beautiful C++/*/bin
+Beautiful C++/*/obj
+Beautiful C++/*/*.cbp
+Beautiful C++/*/*.depend
+Beautiful C++/*/*.layout
+
