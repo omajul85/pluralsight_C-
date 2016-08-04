@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1470213403 source:/home/omajul/C++/Beautiful C++/Count/main.cpp
-	<iostream>
-	<vector>
-	<algorithm>
-	<map>
-
